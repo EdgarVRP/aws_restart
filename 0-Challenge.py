@@ -8,7 +8,7 @@
 
 # Save the script and make a note of its location (absolute path) for future reference.
 
-def isPrime(num):
+def esPrimo(num):
     if num > 1:
         for i in range(2, num):
             if (num % i) == 0:
@@ -22,9 +22,8 @@ def isPrime(num):
 def main():
     with open('results.txt', 'w') as f:
         for i in range(1, 251):
-            if isPrime(i):
+            if esPrimo(i):
                 f.write(str(i) + ' es primo \r')
 
-if __name__ == '__main__':
-    main()
+main()
 
